@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "74920700901",
+    "project_id": "shoppingapp-9783b",
+    "storage_bucket": "shoppingapp-9783b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74920700901:android:27bc1131d64d5195db5d0c",
+        "android_client_info": {
+          "package_name": "com.aarafrao.ecommerceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74920700901-r945kqkagisr3mb4l5au5dimt5u5juup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5o2yz4dbueuUios0GYMNzHu1KZXvPFc0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74920700901-r945kqkagisr3mb4l5au5dimt5u5juup.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
