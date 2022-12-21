@@ -26,10 +26,7 @@ import java.util.ArrayList;
 public class MainActivity3 extends AppCompatActivity {
 
     private ActivityMain3Binding binding;
-    RecyclerView recyclerView;
-    DatabaseReference databaseReference;
-    myadpater myadpater;
-    ArrayList<productlist> list;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,30 +35,7 @@ public class MainActivity3 extends AppCompatActivity {
         binding = ActivityMain3Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        recyclerView = findViewById(R.id.productlist);
-        databaseReference = FirebaseDatabase.getInstance().getReference("product");
-        recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        list = new ArrayList<>();
-        myadpater = new myadpater(this,list);
-        recyclerView.setAdapter(myadpater);
-
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for (DataSnapshot dataSnapshot : snapshot.getChildren()){
-                    productlist pd = dataSnapshot.getValue(productlist.class);
-                    list.add(pd);
-                }
-                myadpater.notifyDataSetChanged();
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each

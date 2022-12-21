@@ -7,6 +7,7 @@
     app:cardCornerRadius="8dp"
     android:layout_marginStart="12dp"
     android:layout_marginEnd="12dp"
+    android:layout_marginTop="20dp"
     app:cardBackgroundColor="#f7f7f7"
     >
 
@@ -43,6 +44,15 @@
         />
 
     <TextView
+        android:id="@+id/productquanity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="180dp"
+        android:text="0 | S"
+        android:textColor="@color/black" />
+
+    <TextView
         android:id="@+id/productprice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -52,32 +62,16 @@
         android:text="TextView"
         android:textColor="@color/black" />
 
-    <ImageView
-        android:id="@+id/addtocard"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/button"
+        android:layout_width="90dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_baseline_shopping_cart_24"
-        android:layout_marginLeft="330dp"
+        android:text="Delete"
+        android:textColor="#000"
+        android:layout_marginLeft="290dp"
         android:layout_marginTop="170dp"
+
         />
-
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="130dp"
-        android:layout_height="28dp"
-        android:hint="@string/select_size"
-        android:layout_marginStart="180dp"
-        android:layout_marginTop="170dp"
-        >
-
-        <AutoCompleteTextView
-            android:id="@+id/auto_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="none"
-        />
-
-    </com.google.android.material.textfield.TextInputLayout>
 
 
 </androidx.cardview.widget.CardView>

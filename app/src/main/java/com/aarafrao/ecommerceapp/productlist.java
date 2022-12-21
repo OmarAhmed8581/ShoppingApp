@@ -4,8 +4,17 @@ public class productlist {
     public productlist() {
     }
 
-    int product_id;
-    String product_name, url;
+    int product_id,price;
+    int quantity=0;
+    String product_name, url,product_desc;
+
+    public int getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
 
     public int getProduct_id() {
         return product_id;
@@ -29,5 +38,21 @@ public class productlist {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    public String getProduct_desc() {
+        return product_desc;
+    }
+
+    public void setProduct_desc(String product_desc) {
+        this.product_desc = product_desc;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
     }
 }
